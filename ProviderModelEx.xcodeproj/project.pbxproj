@@ -16,6 +16,7 @@
 		A0CF19C729D586B1009A91AD /* ProviderModelExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF19C629D586B1009A91AD /* ProviderModelExTests.swift */; };
 		A0CF19D129D586B1009A91AD /* ProviderModelExUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF19D029D586B1009A91AD /* ProviderModelExUITests.swift */; };
 		A0CF19D329D586B1009A91AD /* ProviderModelExUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF19D229D586B1009A91AD /* ProviderModelExUITestsLaunchTests.swift */; };
+		A0CF19E129D58739009A91AD /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF19E029D58739009A91AD /* TestDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A0CF19CC29D586B1009A91AD /* ProviderModelExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProviderModelExUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CF19D029D586B1009A91AD /* ProviderModelExUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderModelExUITests.swift; sourceTree = "<group>"; };
 		A0CF19D229D586B1009A91AD /* ProviderModelExUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderModelExUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0CF19E029D58739009A91AD /* TestDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		A0CF19AE29D586AE009A91AD /* ProviderModelEx */ = {
 			isa = PBXGroup;
 			children = (
+				A0CF19DF29D58709009A91AD /* model */,
 				A0CF19AF29D586AE009A91AD /* AppDelegate.swift */,
 				A0CF19B129D586AE009A91AD /* SceneDelegate.swift */,
 				A0CF19B329D586AE009A91AD /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				A0CF19D229D586B1009A91AD /* ProviderModelExUITestsLaunchTests.swift */,
 			);
 			path = ProviderModelExUITests;
+			sourceTree = "<group>";
+		};
+		A0CF19DF29D58709009A91AD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF19E029D58739009A91AD /* TestDataProvider.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				A0CF19B429D586AE009A91AD /* ViewController.swift in Sources */,
 				A0CF19B029D586AE009A91AD /* AppDelegate.swift in Sources */,
+				A0CF19E129D58739009A91AD /* TestDataProvider.swift in Sources */,
 				A0CF19B229D586AE009A91AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

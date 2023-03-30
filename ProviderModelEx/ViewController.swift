@@ -7,11 +7,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+    
+    @IBOutlet weak var tableview: UITableView!
+    
+    var getArr : [TestDataProvider]?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        getArr = TestDataProvider.getTestData()
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return getArr!.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = getArr![indexPath.row].name
+        
+        return cell
+        
     }
 
 
