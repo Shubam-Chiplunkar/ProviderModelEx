@@ -15,6 +15,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         getArr = TestDataProvider.getTestData()
+        print("abc")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return getArr!.count
